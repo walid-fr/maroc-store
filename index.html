@@ -73,14 +73,25 @@
 <div class="container">
   <div class="products">
 
-    <div class="product">
-      <img src="https://via.placeholder.com/300x200" alt="منتج">
-      <h3>اسم المنتج</h3>
-      <div class="price">199 درهم</div>
-      <a class="btn" href="https://wa.me/2126660004016?text=السلام%20عليكم%20اريد%20طلب%20هذا%20المنتج">
-        اطلب عبر واتساب
-      </a>
-    </div>
+<div class="product">
+  <!-- الصورة الكبيرة -->
+  <img id="main-img-1" src="https://via.placeholder.com/300x200" alt="منتج" style="width:100%; border-radius:10px;">
+
+  <!-- الصور المصغرة -->
+  <div style="display:flex; gap:5px; margin-top:8px; justify-content:center;">
+    <img src="https://via.placeholder.com/300x200" width="60" style="cursor:pointer;" onclick="document.getElementById('main-img-1').src=this.src">
+    <img src="https://via.placeholder.com/300x200/ff0000" width="60" style="cursor:pointer;" onclick="document.getElementById('main-img-1').src=this.src">
+    <img src="https://via.placeholder.com/300x200/00ff00" width="60" style="cursor:pointer;" onclick="document.getElementById('main-img-1').src=this.src">
+  </div>
+
+  <h3>اسم المنتج</h3>
+  <div class="price">199 درهم</div>
+
+  <a class="btn" href="https://wa.me/212612345678?text=السلام%20عليكم%20اريد%20طلب%20اسم%20المنتج">
+    اطلب عبر واتساب
+  </a>
+</div>
+
 
     <div class="product">
       <img src="https://via.placeholder.com/300x200" alt="منتج">
